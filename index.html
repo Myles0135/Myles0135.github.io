@@ -2,44 +2,53 @@
 
   <head>
     <title>Myles's Test HTML Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
-  <body>
-    <div class="title-bar">
-      <nav>
-        <ul>
-          <li class="title-bar-links"><br><a href="Test-Homepage.html">About Me</a></li>
-          <li class="title-bar-links"><a href="Test-Resume.html">Resume</a></li><hr>
-        </ul>
-        <h1 class="the-webpage-of">THE WEBPAGE OF<br></h1>
-        <h2 class="myles-fuller">MYLES FULLER</h2>
-      </nav>
-    </div>
-       <img class="only-image" src="https://cdn.syngency.com/436/models/242850/galleries/229236/large/2841677.jpg?2524" alt="a headshot of me">
-      <h1 class="about-me-header">ABOUT ME</h1>
-        <p class="about-me-body">
-          My name is Myles Fuller, I am a sophomore student at Jefferson Community and Technical college and a prospective web developer. I began college studying networking with the goal of becoming a system administrator, but began studying web development in my spare time and became much more interested in it. I love the sense of discovery and fulfillment that comes with it, and the satisfaction from figuring something out or putting something together. I have mostly studied front-end development, but I am extremely interested in back-end development as my goal is to become a full-stack engineer. I would rate my knowledge as such:
-        </p><br><br>
-        <ul class="about-me-body">
-          <li>HTML/CSS: Very solid understanding, where I have spent most of my studies.</li><br>
-          <li>Javascript: A decent understanding, where I began studying a couple months ago once I felt comfortable with html/css. </li><br>
-          <li>PHP: I have dabbled in PHP, I plan to learn wordpress to go along with it.</li><br>
-          <li>Python: Same as PHP I have dabbled in it, but I want to solidify my front-end knowledge before learning more.</li>
-        </ul><br><br>
-        <p class="about-me-body">
-          Obviously I have a lot to learn but I am very ambitious and would love the opportunity to come do so. Thank you for reviewing my website/application!
-        </p>
-    <//div>
-    <div class="footer">
-      <h1 class="footer-text">Email: <a href="mailto:mylesfuller@yahoo.com">MylesFuller@yahoo.com</a></h1>
-      <h2 class="footer-text"></h2>Phone: (502) 386-3344</h2>
-    </div>
-  </body>
+  <div class="container-fluid">
+    <body>
+      <div class="title-bar">
+        <nav>
+          <ul>
+            <li class="title-bar-links"><br><a href="Test-Homepage.html">About Me</a></li>
+            <li class="title-bar-links"><a href="Test-Resume.html">Resume</a></li><hr>
+          </ul>
+          <h1 class="the-webpage-of">THE WEBPAGE OF<br></h1>
+          <h2 class="myles-fuller animate__animated animate__backInLeft">MYLES FULLER</h2>
+        </nav>
+      </div><br><br>
+
+        <img class="only-image" src="https://cdn.syngency.com/436/models/242850/galleries/229236/large/2841677.jpg?2524" alt="a headshot of me">
+        <h1 class="about-me-header">ABOUT ME</h1>
+          <p class="about-me-body">
+            My name is Myles Fuller, I am a sophomore student at Jefferson Community and Technical college and a prospective web developer. I began college studying networking with the goal of becoming a system administrator, but began studying web development in my spare time and became much more interested in it. I love the sense of discovery and fulfillment that comes with it, and the satisfaction from figuring something out or putting something together. I have mostly studied front-end development, but I am extremely interested in back-end development as my goal is to become a full-stack engineer. I would rate my knowledge as such:
+          </p><br><br><br><br>
+          <ul class="about-me-body">
+            <li>HTML/CSS: Extremely proficient, where I have spent most of my studies. I have also spent many hours using Bootstrap and incorporated it into this website.</li><br><br>
+            <li>Javascript: A decent understanding, where I began studying a couple months ago once I felt comfortable with html/css. </li><br><br>
+            <li>PHP: I have dabbled in PHP, I plan to learn wordpress to go along with it.</li><br><br>
+            <li>Python: Same as PHP I have dabbled in it, but I want to solidify my front-end knowledge before learning more.</li>
+          </ul><br><br><br><br>
+          <p class="about-me-body">
+            Obviously I have a lot to learn but I am very ambitious and would love the opportunity to come do so. Thank you for reviewing my website/application!
+          </p><br><br>
+      </div>
+      <div class="footer">
+        <h1 class="footer-text">Email: <a href="mailto:mylesfuller@yahoo.com">MylesFuller@yahoo.com</a></h1>
+        <h2 class="footer-text"></h2>Phone: (502) 386-3344</h2>
+      </div>
+    </body>
+  </div>
 
 </html>
 
@@ -54,16 +63,16 @@
 
   .title-bar {
     list-style-type: none;
+    color: white;
     margin: 0;
     padding: 0;
-    color: white;
     border: 1px solid #1C6EA4;
     background-color: lightskyblue;
   }
   
   .the-webpage-of {
     letter-spacing: 5px;
-    padding: 60px 10px 0px 70px;
+    padding: 30px 10px 0px 70px;
     font-size: 15px;
   }
   
@@ -84,7 +93,7 @@
   
   .about-me-header {
     font-family: 'Montserrat', sans-serif;
-    padding: 60px 0px 0px 50px;
+    padding: 60px 0px 0px 100px;
     letter-spacing: 5px;
     color: lightskyblue;
     text-align: center;
@@ -93,7 +102,7 @@
   .about-me-body {
     letter-spacing: 0.5px;
     text-align: center;
-    padding: 0px 80px 0px 80px
+    padding: 0px 150px 0px 150px
   }
   
   .footer {
