@@ -1,138 +1,460 @@
 <html>
 
-  <head>
-    <title>Myles's Test HTML Site</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>   
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+        <style>
+            .hvr-grow {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+            }
+            
+            .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
 
-  <div class="container-fluid">
-    <body>
-      <div class="title-bar">
-        <nav>
-          <ul>
-            <li class="title-bar-links"><br><a href="index.html">About Me</a></li>
-            <li class="title-bar-links"><a href="Test-Resume.html">Resume</a></li><hr>
-          </ul>
-          <h1 class="the-webpage-of">THE WEBPAGE OF<br></h1>
-          <h2 class="myles-fuller animate__animated animate__backInLeft">MYLES FULLER</h2>
-        </nav>
-      </div><br><br>
+            .fade-in {
+                animation: fadeIn ease 7s;
+                -webkit-animation: fadeIn ease 7s;
+                -moz-animation: fadeIn ease 7s;
+                -o-animation: fadeIn ease 7s;
+                -ms-animation: fadeIn ease 7s;
+            }
+            
+            @keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
 
-        <img class="only-image" src="https://cdn.syngency.com/436/models/242850/galleries/229236/large/2841677.jpg?2524" alt="a headshot of me">
-        <h1 class="about-me-header">ABOUT ME</h1>
-          <p class="about-me-body">
-            My name is Myles Fuller, I am a sophomore student at Jefferson Community and Technical college and a prospective web developer. I began college studying networking with the goal of becoming a system administrator, but began studying web development in my spare time and became much more interested in it. I love the sense of discovery and fulfillment that comes with it, and the satisfaction from figuring something out or putting something together. I have mostly studied front-end development, but I am extremely interested in back-end development as my goal is to become a full-stack engineer. I would rate my knowledge as such:
-          </p><br><br><br><br>
-          <ul class="about-me-body">
-            <li>HTML/CSS: Extremely proficient, where I have spent most of my studies. I have also spent many hours using Bootstrap and incorporated it into this website.</li><br><br>
-            <li>Javascript: A decent understanding, where I began studying a couple months ago once I felt comfortable with html/css. </li><br><br>
-            <li>PHP: I have dabbled in PHP, I plan to learn wordpress to go along with it.</li><br><br>
-            <li>Python: Same as PHP I have dabbled in it, but I want to solidify my front-end knowledge before learning more.</li>
-          </ul><br><br><br><br>
-          <p class="about-me-body">
-            Obviously I have a lot to learn but I am very ambitious and would love the opportunity to come do so. Thank you for reviewing my website/application!
-          </p><br><br>
-      </div>
-      <div class="footer">
-        <h1 class="footer-text">Email: <a href="mailto:mylesfuller@yahoo.com">MylesFuller@yahoo.com</a></h1>
-        <h2 class="footer-text"></h2>Phone: (502) 386-3344</h2>
-      </div>
+            @-moz-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
+
+            @-webkit-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
+
+            @-o-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
+
+            @-ms-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
+
+            .hvr-shutter-out-horizontal {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                position: relative;
+                background: white;
+                -webkit-transition-property: color;
+                transition-property: color;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                color: white;
+            }
+
+            .hvr-shutter-out-horizontal:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #198A00;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transform-origin: 50%;
+                transform-origin: 50%;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+            }
+            
+            .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+                color: white;
+            }
+            
+            .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+
+            @-webkit-keyframes hvr-pulse {
+                25% {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+                75% {
+                    -webkit-transform: scale(0.9);
+                    transform: scale(0.9);
+                }
+                }
+            @keyframes hvr-pulse {
+                25% {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+                75% {
+                    -webkit-transform: scale(0.9);
+                    transform: scale(0.9);
+                }
+                }
+
+            .hvr-pulse {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            }
+
+            .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+                -webkit-animation-name: hvr-pulse;
+                animation-name: hvr-pulse;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+            }
+
+            hr {
+                width: 300%;
+                height: 8px;
+            }
+
+            .rtitle {
+                padding-top: 30%;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 31px;
+                padding-right: 53%;
+                padding-left:8%;
+            }
+
+            a:hover {
+                color: gray;
+            }
+
+            a {
+                color: inherit;
+            }
+
+            .email {
+                padding-right: 53%;
+                padding-left:8%;
+                font-size: 18px;
+                text-decoration: underline;
+                font-family: 'Titillium Web', sans-serif;
+                color: black;
+            }
+
+            .skills {
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 26px;
+                padding-top: 30%;
+                padding-left: 17%;
+            }
+
+            .box1 {
+                background-image:url("https://www.gannett-cdn.com/presto/2019/09/16/PLOU/18f26ebb-1312-4e61-980d-585795414f2e-DowntownLouisvilleSkyline05.jpg?crop=2000,2000,x600,y0");
+                background-repeat:no-repeat;
+                background-size: cover;
+                opacity: 0.6;
+                border: 2px solid #000000;
+            }
+
+            .box2 {
+                font-family: 'Titillium Web', sans-serif;
+                text-align: center;
+                font-size: 19px;
+                line-height: 4.0em;
+                padding-left: 5%;
+            }
+
+            .box3 {
+                font-family: 'Titillium Web', sans-serif;
+                text-align: center;
+                font-size: 19px;
+                line-height: 4.0em;
+                padding-right: 5%;
+                padding-top: 1%;
+            }
+
+            .box4 {
+                background-image:url("https://live.staticflickr.com/2899/33797854232_9ca0ffa82e_b.jpg");
+                background-repeat:no-repeat;
+                background-size: cover;
+                opacity: 0.6;
+                border: 2px solid #000000;
+            }
+
+            .col-4 {
+                padding-bottom: 8%;
+            }
+
+            .ht {
+                outline: 2px solid #198A00;
+                outline-offset: 0px;
+                text-align:center;
+                line-height: 2.2em;
+                display: block;
+                font-size: 22px;
+                font-family: 'Titillium Web', sans-serif;
+            }
+
+            .row {
+                text-align: center;
+
+            }
+
+            .contact {
+                display: block;
+                width: 115px;
+                height: 40px;
+            }
+
+            #anc {
+                color: black;
+            }
+
+            .button {
+                outline: 2px solid #198A00;
+                outline-offset: 0px;
+                text-align:center;
+                line-height: 2.2em;
+                box-shadow: 0 0 3pt 2pt #198A00;
+            }
+
+            .bio-body {
+                padding-right: 53%;
+                padding-left:8%;
+                font-weight:430;
+                font-size: 16px;
+            }
+
+            #bio-header {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 33px;
+                padding-right: 55%;
+                padding-top: 15%;
+                padding-left: 8%;
+            }
+
+            .bio {
+                text-align: left;
+            }
+
+            .title-bar {
+                border-bottom: 1px solid #000000;
+                padding-top: 1.2%;
+                position: fixed;
+                top: 0;
+                width: 100%;    
+                letter-spacing: 0.8px;
+                padding-bottom: 1.2%;
+                opacity: 1.0;
+                background-color: white;
+                z-index: 99;
+            }
+
+            .title-bar-linkedin {
+                display: inline;
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 20px;
+                padding-right: 8%;
+                font-weight: 600;
+                color: black;     
+            }
+
+            .title-bar-email {
+                display: inline;
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 15px;
+                color: #198A00;
+                text-decoration: none;
+                text-align:center;                
+            }
+
+            .title-bar-myles {
+                display: inline;
+                font-family: 'Titillium Web', sans-serif;
+                padding-right: 55%;
+                padding-left: 8%;
+                font-size: 20px;
+                color: black;
+                
+            }
+
+            body, html {
+                height: 100%;
+                letter-spacing: 0.8px;
+            }
+
+            a:link{
+                text-decoration: none!important;
+            }
+
+            .title-bar-email:hover {
+                color: white;
+            }
+
+            .opaq {
+                opacity: 1;
+                z-index: 98;
+            }
+
+            .r2 {
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .res2 {
+                padding-top: 15%;
+            }
+
+            .res3 {
+                padding-bottom: 10%;
+            }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                $(".box1").hover (
+                    function() {
+                        $(".box1").addClass('opaq');
+                    },
+                    function() {
+                        $(".box1").removeClass('opaq');
+                    }
+                );
+                
+                $(".box4").hover (
+                    function() {
+                        $(".box4").addClass('opaq');
+                    },
+                    function() {
+                        $(".box4").removeClass('opaq');
+                    }
+                );
+            });    
+        </script>
+
+        <title>Myles Fuller - Web Developer</title>
+    </head>
+
+
+
+    <body name="top">
+        <div class="title-bar">
+            <h1 class="title-bar-myles navbar navbar-expand-md"><a href="#top" id="anc">myles fuller</a></h1>
+           
+            <a href="www.linkedin.com/in/myles-fuller-1022891">
+                <p class="title-bar-linkedin">linkedin</p>
+            </a>
+            
+            <div class="button hvr-shutter-out-horizontal">
+                <a href="mailto:mylesfuller@yahoo.com" class="contact">
+                    <p class="title-bar-email">contact me</p>
+                </a>
+            </div>
+            
+            <br>
+        </div>
+        <br>
+        <br>
+      
+        <div class="bio">
+            
+            <p id="bio-header" class="fade-in">
+                I'm Myles Fuller, a web developer from Louisville.
+            </p>
+
+            <p class="bio-body">
+                I began college studying information technology and networking, but began studying web development in my spare time and became much more interested in it. I have mostly worked with HTML/CSS/, but I am extremely interested in back-end development as my goal is to learn a full stack.
+            </p>
+
+            <br><p class="email">
+                <a href="mailto:mylesfuller@yahoo.com">mylesfuller@yahoo.com</a>
+            </p>
+
+        </div>
+
+        <div>
+
+        </div class="container">
+
+            <div class="skills">my skills</div>
+
+            <div class="row justify-content-center">
+                    
+                <div class="col-4 hvricn box1 hvr-grow"></div>
+                
+                <div class="col-4 box2">HTML/CSS: Extremely proficient with both, I have worked with them for about 6 months. I am also well versed with Bootstrap and used it to create this grid.</div>
+                
+                <div class="w-100"></div>
+            
+                <div class="col-4 box3">Javascript: Solid understanding, I am very familiar with the syntax. I have also studied jQuery and used it for the animations on this site. </div>
+                
+                <div class="col-4 hvricn box4 hvr-grow"></div>
+
+            </div>
+
+        </div>
+
+        <div class="rtitle">resume</div>
+        <hr>
+
+        <div class="container">
+        <br>
+        <br>
+            <div class="row r2">
+
+                <div class="col-2">Floor/Stock Supervisor (Vans, January 2018 - Present):</div>
+
+                <div class="col-6 offset-4">As floor supervisor my duties include assisting and problem solving with customers in person, over email and over the phone, sending/receiving emails and other information to/from upper management, opening/closing the store, monitoring our sales and other analytics, restocking and upkeeping the sales floor, directing associates on where to be and what duties to accomplish during the day, answering to the store manager, and other general upkeep of the store.</div>
+
+                <div class="w-100"></div>      
+
+                <div class="col-2 res2">Sales Associate (Vans, April 2017 - January 2018):</div>
+
+                <div class="col-6 offset-4 res2">As a sales associate I provided customer service on the sales floor and over the phone, operated the cash register, and restocked/did general housekeeping duties all throughout the store. In January 2018 I was promoted to floor supervisor.</div>
+            
+                <div class="w-100"></div>
+
+                <div class="col-2 res2">Cashier/Deli Clerk (Kroger, February 2015 - April 2017):</div>
+
+                <div class="col-6 offset-4 res2 res3">At Kroger I ran the cash register, assisted customers throughout the store, restocked shelves, and helped operate the front end of the store.</div>
+            </div>
+        </div>            
+    
     </body>
-  </div>
 
 </html>
-
-<style>
-
- .title-bar-links {
-    display: inline;
-    letter-spacing: 5px;
-    padding: 25px;
-    text-decoration: underline;
-  }
-
-  .title-bar {
-    list-style-type: none;
-    color: white;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #1C6EA4;
-    background-color: lightskyblue;
-  }
-  
-  .the-webpage-of {
-    letter-spacing: 5px;
-    padding: 30px 10px 0px 70px;
-    font-size: 15px;
-  }
-  
-  .myles-fuller {
-    letter-spacing: 10px;
-    padding: 0px 10px 40px 70px;
-    font-size: 70px;
-    font-family: 'Michroma', sans-serif;
-  }
-  
-  .about-me-text {
-   font-family: 'Montserrat', sans-serif;
-  }
-  
-   body {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .about-me-header {
-    font-family: 'Montserrat', sans-serif;
-    padding: 60px 0px 0px 100px;
-    letter-spacing: 5px;
-    color: lightskyblue;
-    text-align: center;
-  }
-  
-  .about-me-body {
-    letter-spacing: 0.5px;
-    text-align: center;
-    padding: 0px 150px 0px 150px
-  }
-  
-  .footer {
-    border: 1px solid #1C6EA4;
-    background-color: lightskyblue;
-    color: white;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-  }
-  
-  .footer-text {
-    font-size: 15px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-  }
-
-  .only-image {
-    float: right;
-    margin: 10px;
-    height: 250px;
-    width: 170px;
-    margin-top: 40px;
-    margin-right: 100px;
-    border: 4px solid lightskyblue;
-  }
-
-  a:hover {
-    color: gray;
-  }
-  
-</style>
