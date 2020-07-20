@@ -7,8 +7,48 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>   
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <style>
+            @-webkit-keyframes hvr-back-pulse {
+            50% {
+                background-color: #90EE90;
+            }
+            }
+            @keyframes hvr-back-pulse {
+            50% {
+                background-color: #90EE90;
+            }
+            }
+            .hvr-back-pulse {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            overflow: hidden;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-property: color, background-color;
+            transition-property: color, background-color;
+            }
+            .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+            -webkit-animation-name: hvr-back-pulse;
+            animation-name: hvr-back-pulse;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            background-color: #90EE90;
+            background-color: #90EE90;
+            color: white;
+            }
+
             .hvr-grow {
                 display: inline-block;
                 vertical-align: middle;
@@ -150,11 +190,10 @@
             }
 
             .rtitle {
-                padding-top: 30%;
+                padding-top: 17%;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 31px;
-                padding-right: 53%;
-                padding-left:8%;
+                text-align: center;
             }
 
             a:hover {
@@ -170,48 +209,18 @@
                 padding-left:8%;
                 font-size: 18px;
                 text-decoration: underline;
-                font-family: 'Titillium Web', sans-serif;
+                font-family: 'Open Sans', sans-serif;
                 color: black;
             }
 
             .skills {
-                font-family: 'Titillium Web', sans-serif;
-                font-size: 26px;
-                padding-top: 30%;
-                padding-left: 17%;
-            }
-
-            .box1 {
-                background-image:url("https://www.gannett-cdn.com/presto/2019/09/16/PLOU/18f26ebb-1312-4e61-980d-585795414f2e-DowntownLouisvilleSkyline05.jpg?crop=2000,2000,x600,y0");
-                background-repeat:no-repeat;
-                background-size: cover;
-                opacity: 0.6;
-                border: 2px solid #000000;
-            }
-
-            .box2 {
-                font-family: 'Titillium Web', sans-serif;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 38px;
+                padding-top: 20%;
+                margin-bottom: 3%;
                 text-align: center;
-                font-size: 19px;
-                line-height: 4.0em;
-                padding-left: 5%;
-            }
-
-            .box3 {
-                font-family: 'Titillium Web', sans-serif;
-                text-align: center;
-                font-size: 19px;
-                line-height: 4.0em;
-                padding-right: 5%;
-                padding-top: 1%;
-            }
-
-            .box4 {
-                background-image:url("https://live.staticflickr.com/2899/33797854232_9ca0ffa82e_b.jpg");
-                background-repeat:no-repeat;
-                background-size: cover;
-                opacity: 0.6;
-                border: 2px solid #000000;
+                justify-content: center;
+                font-family: 'Open Sans', sans-serif;
             }
 
             .col-4 {
@@ -252,18 +261,19 @@
             }
 
             .bio-body {
-                padding-right: 53%;
+                padding-right: 40%;
                 padding-left:8%;
                 font-weight:430;
                 font-size: 16px;
+                font-family: 'Raleway', sans-serif;
             }
 
-            #bio-header {
+            .bio-header {
                 font-family: 'Open Sans', sans-serif;
                 font-size: 33px;
-                padding-right: 55%;
-                padding-top: 15%;
-                padding-left: 8%;
+                margin-right: 45%;
+                margin-top: 15%;
+                margin-left: 8%;
             }
 
             .bio {
@@ -333,38 +343,91 @@
                 font-family: 'Montserrat', sans-serif;
             }
 
-            .res2 {
-                padding-top: 15%;
+            .sline {
+                width: 70%;
+                border: 1px solid black;
+                color: black;
+                background-color: black;
+                height: 5px;
+                margin-bottom: 10%;
             }
 
-            .res3 {
-                padding-bottom: 10%;
+            .htmlimg {
+                max-width: 50%;
+                max-height: 50%;
+                background-color: white;
+                outline: 7px solid #000000;
+                outline-offset: 0px;
+                margin-bottom: 15%;
+            }
+
+            .fade {
+                opacity: 1;
+            }
+
+            .meimg {
+                float: right;
+                max-height: 20%;
+                max-width: 20%;
+                outline: 7px solid #000000;
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+
+            .restitle {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 20px;
+                margin-left: 6%;
+            }
+
+            .resbody {
+                font-family: 'Raleway', sans-serif;
+                font-size: 15px;
+                margin-left: 6%;
+                margin-bottom: 15%;
+                margin-right: 6%;
+            }
+
+
+            @media only screen and (max-width : 700px) {
+                .bio-header {margin-right: 15%;}
+                .bio-body {padding-right: 15%;}
+                .title-bar-myles {padding-right: 17%;}
+                .title-bar-linkedin {padding-right: 4%;}
+                .box2 {line-height: 1.5em;}
+                .box3 {line-height: 1.5em;}
+                .meimg {max-height: 35%; max-width: 35%;}
+                .bio-header {margin-bottom: 5%;;}
+            }
+
+
+            @media only screen and (min-width : 700px) and (max-width : 1100px) {
+                .title-bar-myles {padding-right: 38%;}
+                .meimg {max-height: 25%; max-width: 25%;}
             }
         </style>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
         <script type="text/javascript">
-            $( document ).ready(function() {
-                $(".box1").hover (
-                    function() {
-                        $(".box1").addClass('opaq');
-                    },
-                    function() {
-                        $(".box1").removeClass('opaq');
+            $(window).on("load",function() {
+                $(window).scroll(function() {
+                    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                    $(".fade").each(function() {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+                    
+                    /* If the element is completely within bounds of the window, fade it in */
+                    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
                     }
-                );
-                
-                $(".box4").hover (
-                    function() {
-                        $(".box4").addClass('opaq');
-                    },
-                    function() {
-                        $(".box4").removeClass('opaq');
-                    }
-                );
+                });
+            }).scroll(); //invoke scroll-handler on page-load
             });    
         </script>
 
@@ -393,8 +456,10 @@
         <br>
       
         <div class="bio">
+
+            <img src="_NIC8288.JPG" class="meimg">
             
-            <p id="bio-header" class="fade-in">
+            <p class="bio-header fade-in">
                 I'm Myles Fuller, a web developer from Louisville.
             </p>
 
@@ -412,48 +477,64 @@
 
         </div class="container">
 
-            <div class="skills">my skills</div>
+            <div class="skills fade">my skills</div>
+            <hr class="sline">
+
 
             <div class="row justify-content-center">
-                    
-                <div class="col-4 hvricn box1 hvr-grow"></div>
-                
-                <div class="col-4 box2">HTML/CSS: Extremely proficient with both, I have worked with them for about 6 months. I am also well versed with Bootstrap and used it to create this grid.</div>
-                
-                <div class="w-100"></div>
-            
-                <div class="col-4 box3">javaScript: Solid understanding, I am very familiar with the syntax. I have also studied jQuery and used it for the animations on this site. </div>
-                
-                <div class="col-4 hvricn box4 hvr-grow"></div>
 
+                <div class="htmlbox col-md-6">
+                    <img class="htmlimg animate hvr-back-pulse fade" src="pngguru.com.png">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="htmlimg animate hvr-back-pulse fade" src="pngguru.com-2.png">
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="htmlbox col-md-6">
+                    <img class="htmlimg animate hvr-back-pulse fade" src="kisspng-bootstrap-scalable-vector-graphics-clip-art-logo-formation-bootstrap-apollo-formation-l-amp-apos-5b6a8996ec9240.532171771533708694969.png">
+                </div>
+
+                <div class="htmlbox col-md-6">
+                    <img class="htmlimg animate hvr-back-pulse fade" src="kisspng-javascript-node-js-logo-computer-programming-progr-5af871b4adf622.1971784815262314767126.png">
+                </div>
+
+                <div class="w-100"></div>
+                
+                <div class="htmlbox col-md-6">
+                    <img class="htmlimg animate hvr-back-pulse fade" src="pngguru.com-4.png">
+                </div>
+
+                <div class="htmlbox col-md-6">
+                    <img class="htmlimg animate hvr-back-pulse fade" src="pngguru.com-5.png">
+                </div>
+       
             </div>
 
         </div>
 
-        <div class="rtitle">resume</div>
-        <hr>
+        <div class="rtitle fade">resume</div>
+        <hr class="sline">
 
-        <div class="container">
-        <br>
-        <br>
-            <div class="row r2">
+            <div class="restitle">Floor/Stock Supervisor (Vans, January 2018 - Present):</div>
+            <br>
 
-                <div class="col-2">Floor/Stock Supervisor (Vans, January 2018 - Present):</div>
+            <div class="resbody fade">As floor supervisor my duties include assisting and problem solving with customers in person, over email and over the phone, sending/receiving emails and other information to/from upper management, opening/closing the store, monitoring our sales and other analytics, restocking and upkeeping the sales floor, directing associates on where to be and what duties to accomplish during the day, answering to the store manager, and other general upkeep of the store.</div>     
 
-                <div class="col-6 offset-4">As floor supervisor my duties include assisting and problem solving with customers in person, over email and over the phone, sending/receiving emails and other information to/from upper management, opening/closing the store, monitoring our sales and other analytics, restocking and upkeeping the sales floor, directing associates on where to be and what duties to accomplish during the day, answering to the store manager, and other general upkeep of the store.</div>
+            <div class="restitle">Sales Associate (Vans, April 2017 - January 2018):</div>
+            <br>
 
-                <div class="w-100"></div>      
-
-                <div class="col-2 res2">Sales Associate (Vans, April 2017 - January 2018):</div>
-
-                <div class="col-6 offset-4 res2">As a sales associate I provided customer service on the sales floor and over the phone, operated the cash register, and restocked/did general housekeeping duties all throughout the store. In January 2018 I was promoted to floor supervisor.</div>
+            <div class="resbody fade">As a sales associate I provided customer service on the sales floor and over the phone, operated the cash register, and restocked/did general housekeeping duties all throughout the store. In January 2018 I was promoted to floor supervisor.</div>
             
-                <div class="w-100"></div>
+            <div class="restitle">Cashier/Deli Clerk (Kroger, February 2015 - April 2017):</div>
+            <br>
+            
 
-                <div class="col-2 res2">Cashier/Deli Clerk (Kroger, February 2015 - April 2017):</div>
-
-                <div class="col-6 offset-4 res2 res3">At Kroger I ran the cash register, assisted customers throughout the store, restocked shelves, and helped operate the front end of the store.</div>
-            </div>
+            <div class="resbody fade">At Kroger I ran the cash register, assisted customers throughout the store, restocked shelves, and helped operate the front end of the store.</div>
+            <br>
+        
         </div>            
     
     </body>
