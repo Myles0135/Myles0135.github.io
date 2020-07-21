@@ -194,6 +194,7 @@
                 font-family: 'Open Sans', sans-serif;
                 font-size: 31px;
                 text-align: center;
+                margin-top: 25%;
             }
 
             a:hover {
@@ -211,6 +212,7 @@
                 text-decoration: underline;
                 font-family: 'Open Sans', sans-serif;
                 color: black;
+                margin-bottom: 25%;
             }
 
             .skills {
@@ -370,11 +372,7 @@
                 max-height: 20%;
                 max-width: 20%;
                 outline: 7px solid #000000;
-                -webkit-transform: rotate(270deg);
-                -moz-transform: rotate(270deg);
-                -o-transform: rotate(270deg);
-                -ms-transform: rotate(270deg);
-                transform: rotate(270deg);
+                margin-right: 8%;
             }
 
             .restitle {
@@ -421,15 +419,13 @@
                 $(window).scroll(function() {
                     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
                     $(".fade").each(function() {
-                    /* Check the location of each desired element */
                     var objectBottom = $(this).offset().top + $(this).outerHeight();
                     
-                    /* If the element is completely within bounds of the window, fade it in */
-                    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                    if (objectBottom < windowBottom) {
                         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
                     }
                 });
-            }).scroll(); //invoke scroll-handler on page-load
+            }).scroll();
             });    
         </script>
 
