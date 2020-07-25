@@ -49,6 +49,10 @@
             color: white;
             }
 
+            html, body {
+                max-width: 100%;
+            }
+
             .hvr-grow {
                 display: inline-block;
                 vertical-align: middle;
@@ -390,6 +394,20 @@
                 margin-right: 6%;
             }
 
+            .webart {
+                float: left;
+                max-height: 25%;
+                max-width: 25%;
+                background-color: white;
+                outline: 7px solid #000000;
+                outline-offset: 8px;
+                margin-left: 5%;
+            }
+
+            .pbody {
+                font-family: 'Raleway', sans-serif;
+                font-size: 20px;
+            }
 
             @media only screen and (max-width : 700px) {
                 .bio-header {margin-right: 15%;}
@@ -408,6 +426,8 @@
                 .title-bar-myles {padding-right: 38%;}
                 .meimg {max-height: 25%; max-width: 25%;}
             }
+
+
         </style>
 
         <script src="jquery.min.js"></script>
@@ -512,6 +532,26 @@
             </div>
 
         </div>
+
+        <div class="container">
+
+            <div class="skills fade">my projects</div>
+            <hr class="sline">
+
+            <div class="row justify-content-center">
+                
+                <div class="col-md-6">    
+                    <a href="https://myles0135.github.io/New-Smc-Website/">
+                        <img src="images/pngguru.com-6.png" class="htmlimg animate hvr-back-pulse">
+                    </a>
+                </div>
+                
+                <div class="col-md-6">
+                    <p class="pbody"><strong>SMC:</strong><br>A website I am building for a local company, utilizing HTML/CSS/jQuery/javaScript/Boostrap.</p>
+                </div>
+            </div>
+        </div>
+
 
         <div class="rtitle fade">resume</div>
         <hr class="sline">
