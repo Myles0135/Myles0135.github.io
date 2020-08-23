@@ -11,6 +11,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
+
+            body {
+                overflow-x: hidden;
+            }  
+
             @-webkit-keyframes hvr-back-pulse {
             50% {
                 background-color: #90EE90;
@@ -194,11 +199,16 @@
             }
 
             .rtitle {
-                padding-top: 17%;
                 font-family: 'Open Sans', sans-serif;
-                font-size: 31px;
+                font-size: 32px;
                 text-align: center;
-                margin-top: 25%;
+                justify-content: center;
+                font-family: 'Open Sans', sans-serif;
+                background-color: black;
+                color: white;
+                height: 55px;
+                width: 100%;
+                margin-bottom: 10%;
             }
 
             a:hover {
@@ -221,12 +231,15 @@
 
             .skills {
                 font-family: 'Open Sans', sans-serif;
-                font-size: 38px;
-                padding-top: 20%;
-                margin-bottom: 3%;
+                font-size: 32px;
+                margin-top: 30%;
                 text-align: center;
                 justify-content: center;
                 font-family: 'Open Sans', sans-serif;
+                background-color: black;
+                color: white;
+                height: 55px;
+                width: 100%;
             }
 
             .col-4 {
@@ -410,6 +423,38 @@
                 font-size: 20px;
             }
 
+            .grrow {
+                background-color: lightsteelblue;
+                padding-top: 10%;
+                padding-bottom: 20%;
+            }
+
+
+            .ywrow  {
+                background-color: lightgoldenrodyellow;
+                padding-top: 10%;
+                padding-bottom: 25%;
+            }
+
+            .proj {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 32px;
+                text-align: center;
+                justify-content: center;
+                font-family: 'Open Sans', sans-serif;
+                background-color: black;
+                color: white;
+                height: 55px;
+                margin-left: 0;
+                margin-right: 0;
+                max-width: 100%;;
+            }
+
+            .container-full {
+                margin: 0 auto;
+                width: 100%;
+            }
+
             @media only screen and (max-width : 700px) {
                 .bio-header {margin-right: 15%;}
                 .bio-body {padding-right: 15%;}
@@ -492,84 +537,82 @@
 
         </div>
 
-        <div>
-
-        </div class="container">
-
+        <div class="containter-full">
+            
             <div class="skills fade">my skills</div>
-            <hr class="sline">
+            
+            <div class="container-fluid grrow">
 
 
-            <div class="row justify-content-center">
+                <div class="row justify-content-center">
 
-                <div class="htmlbox col-md-6">
-                    <img class="htmlimg animate hvr-back-pulse fade" src="images/pngguru.com.png">
+                    <div class="htmlbox col-md-6">
+                        <img class="htmlimg animate hvr-back-pulse fade" src="images/pngguru.com.png">
+                    </div>
+
+                    <div class="col-md-6">
+                        <img class="htmlimg animate hvr-back-pulse fade" src="images/pngguru.com-2.png">
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="htmlbox col-md-6">
+                        <img class="htmlimg animate hvr-back-pulse fade" src="images/kisspng-bootstrap-scalable-vector-graphics-clip-art-logo-formation-bootstrap-apollo-formation-l-amp-apos-5b6a8996ec9240.532171771533708694969.png">
+                    </div>
+
+                    <div class="htmlbox col-md-6">
+                        <img class="htmlimg animate hvr-back-pulse fade" src="images/kisspng-javascript-node-js-logo-computer-programming-progr-5af871b4adf622.1971784815262314767126.png">
+                    </div>
+
+                    <div class="w-100"></div>
+                    
+                    <div class="htmlbox col-md-6">
+                        <img class="htmlimg animate hvr-back-pulse fade" src="images/pngguru.com-4.png">
+                    </div>
+
+                    <div class="htmlbox col-md-6">
+                        <img class="htmlimg animate hvr-back-pulse fade" src="images/pngguru.com-5.png">
+                    </div>
+        
                 </div>
 
-                <div class="col-md-6">
-                    <img class="htmlimg animate hvr-back-pulse fade" src="images/pngguru.com-2.png">
-                </div>
-
-                <div class="w-100"></div>
-
-                <div class="htmlbox col-md-6">
-                    <img class="htmlimg animate hvr-back-pulse fade" src="images/kisspng-bootstrap-scalable-vector-graphics-clip-art-logo-formation-bootstrap-apollo-formation-l-amp-apos-5b6a8996ec9240.532171771533708694969.png">
-                </div>
-
-                <div class="htmlbox col-md-6">
-                    <img class="htmlimg animate hvr-back-pulse fade" src="images/kisspng-javascript-node-js-logo-computer-programming-progr-5af871b4adf622.1971784815262314767126.png">
-                </div>
-
-                <div class="w-100"></div>
-                
-                <div class="htmlbox col-md-6">
-                    <img class="htmlimg animate hvr-back-pulse fade" src="images/pngguru.com-4.png">
-                </div>
-
-                <div class="htmlbox col-md-6">
-                    <img class="htmlimg animate hvr-back-pulse fade" src="images/pngguru.com-5.png">
-                </div>
-       
             </div>
 
-        </div>
+            
+            <div class="proj">my projects</div>
+            
+            <div class="container-fluid ywrow">
 
-        <div class="container">
+                <div class="row justify-content-center">
+                    
+                    <div class="col-md-6">    
+                        <a href="https://myles0135.github.io/New-Smc-Website/" target="_blank">
+                            <img src="images/pngguru.com-6.png" class="htmlimg animate hvr-back-pulse">
+                        </a>
 
-            <div class="skills fade">my projects</div>
-            <hr class="sline">
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <p class="pbody"><strong>SMC:</strong><br>A website I am building for a local company, utilizing HTML/CSS/jQuery/javaScript/Boostrap.</p>
+                    </div>
 
-            <div class="row justify-content-center">
-                
-                <div class="col-md-6">    
-                    <a href="https://myles0135.github.io/New-Smc-Website/" target="_blank">
-                        <img src="images/pngguru.com-6.png" class="htmlimg animate hvr-back-pulse">
-                    </a>
+                    <div class="w-100"></div>
 
+                    <div class="col-md-6">
+                        <a href="https://myles0135.github.io/proto-site/" target="_blank">
+                            <img src="images/pngguru.com-6.png" class="htmlimg animate hvr-back-pulse">
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="pbody"><strong>Original Website:</strong><br>An older version of my website that I built using HTML/CSS/Boostrap.</p>
+                    </div>
+                    
                 </div>
-                
-                <div class="col-md-6">
-                    <p class="pbody"><strong>SMC:</strong><br>A website I am building for a local company, utilizing HTML/CSS/jQuery/javaScript/Boostrap.</p>
-                </div>
-
-                <div class="w-100"></div>
-
-                <div class="col-md-6">
-                    <a href="https://myles0135.github.io/proto-site/" target="_blank">
-                        <img src="images/pngguru.com-6.png" class="htmlimg animate hvr-back-pulse">
-                    </a>
-                </div>
-
-                <div class="col-md-6">
-                    <p class="pbody"><strong>Original Website</strong><br>An older version of my website that I built using HTML/CSS/Boostrap</p>
-                </div>
-                
             </div>
         </div>
-
 
         <div class="rtitle fade">resume</div>
-        <hr class="sline">
 
             <div class="restitle">Floor/Stock Supervisor (Vans, January 2018 - Present):</div>
             <br>
